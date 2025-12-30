@@ -42,13 +42,12 @@ export function Navbar() {
         <div className="flex items-center justify-between">
           <Link href="/" className="flex items-center gap-4 group">
             <div className="relative flex h-16 w-16 items-center justify-center overflow-hidden rounded-2xl bg-white shadow-lg shadow-white/10 group-hover:scale-110 group-hover:rotate-3 transition-all duration-300">
-<Image 
-                  src={logoUrl} 
-                  alt="Logo" 
-                  fill 
-                  className="object-cover"
-                  sizes="64px"
-                />
+              <Image 
+                src={logoUrl} 
+                alt="Logo" 
+                fill 
+                className="object-cover"
+              />
             </div>
             <div className="flex flex-col leading-none">
                 <span className="text-3xl font-bold tracking-tighter text-white">לי <span className="text-primary">מתכות</span></span>
