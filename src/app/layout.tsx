@@ -3,6 +3,7 @@ import { Heebo } from "next/font/google";
 import "./globals.css";
 import ErrorReporter from "@/components/ErrorReporter";
 import Script from "next/script";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 
 const heebo = Heebo({
   subsets: ["hebrew", "latin"],
@@ -40,6 +41,7 @@ export default function RootLayout({
           data-custom-data='{"appName": "YourApp", "version": "1.0.0", "greeting": "hi"}'
         />
         {children}
+        <SpeedInsights />
       </body>
     </html>
   );
